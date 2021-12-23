@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl_z3gZGK7eQh2xyggz1aKR-gHgEos6cwVUA&usqp=CAU);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}   
+
+#survey-form {
+    background-color: blue;
+    padding: 50px;
+    font-size: x-large;
+}
+#description {
+    font-size: x-large;
+    margin-bottom: 2rem;
+}
+#title {
+    font-size: xx-large;
+    font-weight: 1000;
+    margin-top: 3rem;
+}
+
+#name, #email, #number, #dropdown {
+    display: block;
+    width: 100%;
+    padding: 15px;
+} 
+
+#submit {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 11px;
+    background-color: chartreuse;
+    color: white;
+    font-size: large;
+}
+
+#comments {
+display: block;
+width: 100%;
+padding: 40px;
+}

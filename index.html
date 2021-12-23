@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="survey.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width", initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <div class="main">
     <h1 id="title">StanJo Survey form</h1>
     <p id="description">This is a survey form for our company</p>
     <form id="survey-form">
@@ -38,6 +40,25 @@
                 <input type="radio" name="recommend" id="not-sure" value="not-sure">
                 <label for="not-sure">Not sure</label>
             </fieldset>
+
+            <p>What would you like to see improved?</p>
+            <input type="checkbox" name="taste" id="taste">
+            <label for="taste">Taste</label><br>
+
+            <input type="checkbox" name="quantity" id="quantity">
+            <label for="quantity">Quantity</label><br>
+
+            <input type="checkbox" name="packaging" id="packaging">
+            <label for="packaging">Packaging</label><br>
+
+            <label for="comments">Any comments or suggestions?</label><br>
+            <textarea name="comments" id="comments" placeholder="Enter your comments here"> </textarea><br>
+
+            <button id="submit" type="submit">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
     </form>
 </body>
 </html>
