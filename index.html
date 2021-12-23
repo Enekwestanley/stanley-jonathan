@@ -10,12 +10,34 @@
     <h1 id="title">StanJo Survey form</h1>
     <p id="description">This is a survey form for our company</p>
     <form id="survey-form">
-        <!--input for enter the name-->
-        <input type="text" id="name">
-        <!--input for enter the email-->
-        <input type="text" id="email">
-        <!--input for enter the number-->
-        <input type="text" id="number">
+        <label for="name" id="name-label">Name</label><br>
+        <input type="text" id="name" placeholder="Enter your name"><br>
+
+        <label for="email" id="name-label">Email</label><br>
+        <input type="email" id="email" placeholder="Enter your email"><br>
+
+        <label for="number" id="number-label">Age</label><br>
+        <input type="number" id="number" max="30" min="0" placeholder="Enter your Age"><br>
+
+        <label for="dropdown">Which option best describe your cuurent role</label><br>
+            <select name="dropdown" id="dropdown">
+                <option value="students">students</option>
+                <option value="full-time-employer">full time employer</option>
+                <option value="part-time-employer">Part time employer</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+                <option value="others">Others</option>
+            </select>
+            <fieldset>
+                <legend>Would you like to recommend my products to a friend</legend>
+                <input type="radio" name="recommend" checked id="definitely" value="definitely">
+                <label for="definitely">Definitely</label><br>
+
+                <input type="radio" name="recommend" id="maybe" value="Maybe">
+                <label for="maybe">Maybe</label><br>
+
+                <input type="radio" name="recommend" id="not-sure" value="not-sure">
+                <label for="not-sure">Not sure</label>
+            </fieldset>
     </form>
 </body>
 </html>
